@@ -15,6 +15,10 @@ dependencies:
     sdk: flutter
 
 
+  intl: ^0.17.0
+  flutter_localizations:
+    sdk: flutter
+
 
   cupertino_icons: ^1.0.5
   font_awesome_flutter: ^10.4.0
@@ -32,6 +36,9 @@ dev_dependencies:
 
 
 flutter:
+  generate: true
+  uses-material-design: true
+
   assets:
     - assets/img/png/
     - assets/img/jpg/

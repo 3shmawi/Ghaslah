@@ -1,12 +1,9 @@
-import 'dart:convert';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:carousel_slider/carousel_slider.dart';
-import '../../widgets/colors.dart';
-import '../../widgets/single_car.dart';
-import 'new_booking_screen.dart';
-import 'old_booking_screen.dart';
+import 'package:ghaslah/unit/color_manager.dart';
+
+import 'new/new_booking_screen.dart';
+import 'old/old_booking_screen.dart';
+
 
 class BookingPage extends StatefulWidget {
   const BookingPage({
@@ -18,7 +15,6 @@ class BookingPage extends StatefulWidget {
 }
 
 class _BookingPageState extends State<BookingPage> {
-  late TabController _controller ;
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +23,9 @@ class _BookingPageState extends State<BookingPage> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: AppColor.gradientColor2,
+          backgroundColor: ColorManager.gradientColor2,
           title: const Text('Bookings'),
-          bottom:   TabBar(
+          bottom:   const TabBar(
             tabs: [
               Tab(text: "Current"),
               Tab(text: "Done"),

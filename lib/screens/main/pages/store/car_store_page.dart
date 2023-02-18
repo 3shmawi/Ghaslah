@@ -1,11 +1,11 @@
 import 'dart:ui';
-import '../widgets/car_category_card.dart';
-import '../widgets/colors.dart';
+import 'package:ghaslah/unit/color_manager.dart';
+import '../../../../unit/shared_widget/car_category_card.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:convert';
 
-import '../widgets/single_car.dart';
+import '../../../car_details/single_car.dart';
 
 class CarStorePage extends StatefulWidget {
   const CarStorePage({
@@ -116,30 +116,30 @@ class _CarStorePageState extends State<CarStorePage> {
             scrollDirection: Axis.horizontal,
             shrinkWrap: true,
             physics: const BouncingScrollPhysics(),
-            children: [
+            children: const [
               CarCategory(
                 carPicture: 'assets/img/jpg/car.jpeg',
                 categoryName: 'غسيل كوفيد',
                 categoryText: '49 SAR',
-                circleColor: AppColor.redCircleColor,
+                circleColor: ColorManager.redCircleColor,
               ),
               CarCategory(
                 carPicture: 'assets/img/jpg/images.jpeg',
                 categoryName: 'غسيل سويتر بلس ',
                 categoryText: '54 SAR',
-                circleColor: AppColor.purpleCircleColor,
+                circleColor: ColorManager.purpleCircleColor,
               ),
               CarCategory(
                 carPicture: 'assets/img/jpg/car.jpeg',
                 categoryName: 'غسيل كوفيد',
                 categoryText: '49 SAR',
-                circleColor: AppColor.redCircleColor,
+                circleColor: ColorManager.redCircleColor,
               ),
               CarCategory(
                 carPicture: 'assets/img/jpg/images.jpeg',
                 categoryName: 'غسيل سويتر بلس ',
                 categoryText: '54 SAR',
-                circleColor: AppColor.purpleCircleColor,
+                circleColor: ColorManager.purpleCircleColor,
               ),
             ],
           ),
@@ -153,13 +153,13 @@ class _CarStorePageState extends State<CarStorePage> {
         child: Column(
           children: [
             Row(
-              children: [
+              children: const [
                 Text(
                   "اختر خدمات اضافيه",
                   style: TextStyle(
                     fontSize: 25.0,
                     fontWeight: FontWeight.bold,
-                    color: AppColor.mainTextColor,
+                    color: ColorManager.mainTextColor,
                   ),
                 ),
               ],
@@ -230,8 +230,8 @@ class _CarStorePageState extends State<CarStorePage> {
                                     children: [
                                       Text(
                                         newData[index]['year'],
-                                        style: TextStyle(
-                                          color: AppColor.secondTextColor,
+                                        style: const TextStyle(
+                                          color: ColorManager.secondTextColor,
                                           fontSize: 13.0,
                                         ),
                                       ),
@@ -240,8 +240,8 @@ class _CarStorePageState extends State<CarStorePage> {
                                       ),
                                       Text(
                                         newData[index]['name'],
-                                        style: TextStyle(
-                                          color: AppColor.mainTextColor,
+                                        style: const TextStyle(
+                                          color: ColorManager.mainTextColor,
                                           fontSize: 16.0,
                                           fontWeight: FontWeight.bold,
                                         ),
@@ -263,11 +263,11 @@ class _CarStorePageState extends State<CarStorePage> {
                                         color: Colors.grey.shade200,
                                         shape: BoxShape.circle,
                                       ),
-                                      child: Center(
+                                      child: const Center(
                                         child: FaIcon(
                                           FontAwesomeIcons.plus,
                                           size: 20.0,
-                                          color: AppColor.heartGreyColor,
+                                          color: ColorManager.heartGreyColor,
                                         ),
                                       ),
                                     ),

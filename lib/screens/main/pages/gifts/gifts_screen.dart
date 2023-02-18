@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../../widgets/colors.dart';
+import 'package:ghaslah/unit/color_manager.dart';
 
 class GiftsScreen extends StatelessWidget {
   const GiftsScreen({Key? key}) : super(key: key);
@@ -10,7 +8,7 @@ class GiftsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColor.gradientColor2,
+        backgroundColor: ColorManager.gradientColor2,
         title: const Text('Gifts'),
       ),
 

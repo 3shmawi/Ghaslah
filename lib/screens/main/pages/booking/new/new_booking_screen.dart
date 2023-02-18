@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class NewBooking extends StatelessWidget {
   const NewBooking({Key? key}) : super(key: key);
