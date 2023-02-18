@@ -1,0 +1,41 @@
+
+
+[
+  {
+    "img":"assets/img/jpg/frag.png",
+    "year":"10 SAR",
+    "name": "فواحه",
+    "speed": "200k Km",
+    "color": "Yellow",
+    "price": "$ 150,125",
+    "location": "Tashkent"
+  },
+  {
+    "img":"assets/img/jpg/frag.png",
+    "year":"10 SAR",
+    "name": "مناديل",
+    "speed": "200k Km",
+    "color": "Yellow",
+    "price": "$ 150,125",
+    "location": "Tashkent"
+  },
+  {
+    "img":"assets/img/jpg/frag.png",
+    "year":"10 SAR",
+    "name": "فواحه",
+    "speed": "80k Km",
+    "color": "White",
+    "price": "$ 11,765",
+    "location": "Jizzakh"
+  },
+  {
+    "img":"assets/img/jpg/frag.png",
+    "year":"10 SAR",
+    "name": "مناديل",
+    "speed": "75k Km",
+    "color": "Teal",
+    "price": "$ 6,825",
+    "location": "Xorezm"
+  }
+
+]
