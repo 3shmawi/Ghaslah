@@ -66,47 +66,11 @@ class _MainScreenState extends State<MainScreen> {
                 _selectedIndex = index;
               });
             },
-            tabs: const [
-              GButton(
-                icon: FontAwesomeIcons.store,
-                text: "Home",
-                padding: EdgeInsets.only(
-                  left: 20.0,
-                  right: 20.0,
-                  top: 15.0,
-                  bottom: 15.0,
-                ),
-              ),
-              GButton(
-                icon: FontAwesomeIcons.calendar,
-                text: "bookings",
-                padding: EdgeInsets.only(
-                  left: 20.0,
-                  right: 20.0,
-                  top: 15.0,
-                  bottom: 15.0,
-                ),
-              ),
-              GButton(
-                icon: FontAwesomeIcons.gift,
-                text: "Gifts",
-                padding: EdgeInsets.only(
-                  left: 20.0,
-                  right: 20.0,
-                  top: 15.0,
-                  bottom: 15.0,
-                ),
-              ),
-              GButton(
-                icon: FontAwesomeIcons.circleUser,
-                text: "Profile",
-                padding: EdgeInsets.only(
-                  left: 20.0,
-                  right: 20.0,
-                  top: 15.0,
-                  bottom: 15.0,
-                ),
-              ),
+            tabs: [
+              _gButton('Home', FontAwesomeIcons.store),
+              _gButton('bookings', FontAwesomeIcons.calendar),
+              _gButton('Gifts', FontAwesomeIcons.gift),
+              _gButton('Profile', FontAwesomeIcons.circleUser),
             ],
           ),
         ),
@@ -114,4 +78,15 @@ class _MainScreenState extends State<MainScreen> {
       body: _listPages.elementAt(_selectedIndex),
     );
   }
+
+  GButton _gButton(String text, IconData icon) => GButton(
+        icon: icon,
+        text: text,
+        padding: const EdgeInsets.only(
+          left: 20.0,
+          right: 20.0,
+          top: 15.0,
+          bottom: 15.0,
+        ),
+      );
 }

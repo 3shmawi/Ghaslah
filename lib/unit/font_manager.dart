@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FontConstants {
-  static const String fontFamily = "googleFont";
+  // static const String fontFamily = "googleFont";
 }
 
 class FontWeightManager {
