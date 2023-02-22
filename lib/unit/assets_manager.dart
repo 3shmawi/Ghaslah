@@ -1,10 +1,12 @@
-const String imagePath = "assets/images";
+const String imagePath = "assets/img";
 const String iconPath = "assets/icons";
-
+const String jsonPath = "assets/json/car_list.json";
 class AssetsManager {
   //image
   static String logoImage = '$imagePath/logo.png';
   static String advertisementImage = '$imagePath/advertisement.svg';
+  static String mainService1 = "$imagePath/jpg/car.jpeg";
+  static String mainService2 = "$imagePath/jpg/images.jpeg";
 
   //icon
   static String logoIcon = '$iconPath/logo.svg';

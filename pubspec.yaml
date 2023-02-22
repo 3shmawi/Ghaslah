@@ -41,6 +41,5 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/img/png/
     - assets/img/jpg/
     - assets/json/car_list.json
