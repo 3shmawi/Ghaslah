@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:ghaslah/unit/color_manager.dart';
+import 'package:ghaslah/unit/routes_manager.dart';
 import '../../../../unit/shared_widget/car_category_card.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -116,26 +117,30 @@ class _CarStorePageState extends State<CarStorePage> {
             scrollDirection: Axis.horizontal,
             shrinkWrap: true,
             physics: const BouncingScrollPhysics(),
-            children: const [
+            children: [
               CarCategory(
+                onTap: () =>Navigator.of(context).pushNamed(Routes.bookingWashRoute),
                 carPicture: 'assets/img/jpg/car.jpeg',
                 categoryName: 'غسيل كوفيد',
                 categoryText: '49 SAR',
                 circleColor: ColorManager.redCircleColor,
               ),
               CarCategory(
+                onTap: () {},
                 carPicture: 'assets/img/jpg/images.jpeg',
                 categoryName: 'غسيل سويتر بلس ',
                 categoryText: '54 SAR',
                 circleColor: ColorManager.purpleCircleColor,
               ),
               CarCategory(
+                onTap: () {},
                 carPicture: 'assets/img/jpg/car.jpeg',
                 categoryName: 'غسيل كوفيد',
                 categoryText: '49 SAR',
                 circleColor: ColorManager.redCircleColor,
               ),
               CarCategory(
+                onTap: () {},
                 carPicture: 'assets/img/jpg/images.jpeg',
                 categoryName: 'غسيل سويتر بلس ',
                 categoryText: '54 SAR',

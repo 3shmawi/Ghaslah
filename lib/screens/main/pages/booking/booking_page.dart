@@ -23,6 +23,8 @@ class _BookingPageState extends State<BookingPage> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
+          automaticallyImplyLeading: false,
+          centerTitle: true,
           backgroundColor: ColorManager.gradientColor2,
           title: const Text('Bookings'),
           bottom:   const TabBar(

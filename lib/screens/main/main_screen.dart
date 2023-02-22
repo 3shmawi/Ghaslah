@@ -84,7 +84,7 @@ class _MainScreenState extends State<MainScreen> {
         text: text,
         padding: const EdgeInsets.only(
           left: 20.0,
-          right: 20.0,
+          right: 15.0,
           top: 15.0,
           bottom: 15.0,
         ),
