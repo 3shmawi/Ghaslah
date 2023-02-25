@@ -54,8 +54,8 @@ class CarCategory extends StatelessWidget {
                 alignment: AlignmentDirectional.center,
                 children: [
                   Container(
-                    height: 100.0,
-                    width: 100.0,
+                    height: 70.0,
+                    width: 70.0,
                     decoration: BoxDecoration(
                       color: circleColor,
                       shape: BoxShape.circle,

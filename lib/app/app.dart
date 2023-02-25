@@ -41,7 +41,7 @@ class MyAppState extends State<MyApp> {
       ],
       supportedLocales: L10n.all,
       onGenerateRoute: RouteGenerator.getRoute,
-      initialRoute: Routes.mainRoute,
+      initialRoute: Routes.loginScreen,
     );
   }
 }

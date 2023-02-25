@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 
 class FontConstants {
-  // static const String fontFamily = "googleFont";
+  static const String fontFamily = "googleFont";
 }
+class SizedConstant{
+  static double defaultSize=10.0;
+  static double radiusAuthSize=40.0;
+
+}
+
+
+
 
 class FontWeightManager {
   static const FontWeight normal = FontWeight.normal;

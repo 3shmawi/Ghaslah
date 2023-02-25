@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:ghaslah/unit/color_manager.dart';
+import 'package:ghaslah/unit/font_manager.dart';
 import 'package:ghaslah/unit/routes_manager.dart';
 import '../../../../unit/shared_widget/car_category_card.dart';
 import 'package:flutter/material.dart';
@@ -57,19 +58,15 @@ class _CarStorePageState extends State<CarStorePage> {
           ),
           child: Row(
             children: const [
-              Icon(
-                FontAwesomeIcons.bars,
-                color: Colors.white,
-              ),
               SizedBox(
                 width: 50.0,
               ),
               Expanded(
                 child: Center(
                   child: Text(
-                    "Hello Seif",
+                    "مرحبا سيف",
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: FontSize.s28,
                       color: Colors.white,
                       fontWeight: FontWeight.w100,
                     ),
@@ -78,10 +75,6 @@ class _CarStorePageState extends State<CarStorePage> {
               ),
               SizedBox(
                 width: 50.0,
-              ),
-              Icon(
-                FontAwesomeIcons.circleUser,
-                color: Colors.white,
               ),
             ],
           ),

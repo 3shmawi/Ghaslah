@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class ColorManager {
   //Background color grey
@@ -6,7 +7,7 @@ class ColorManager {
 
 //Top background gradient
   static const Color gradientColor1 = Color(0xFF323fa3);
-  static const Color gradientColor2 = Color(0xFF5b47ec);
+  static  Color gradientColor2 = HexColor("#1e3666");
 
 // Card white color
   static const Color whiteColor = Color(0xFFFFFFFF);
